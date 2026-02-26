@@ -1,0 +1,159 @@
+主题：OpenClaw环境恢复流程指南
+
+收件人：wgyx2000@163.com
+发件人：OpenClaw Assistant
+
+========================================
+OpenClaw工作区环境恢复完整指南
+========================================
+
+你好！
+
+以下是你在新环境中恢复OpenClaw配置的完整流程。
+
+========================================
+一、准备工作
+========================================
+
+1. 确保新环境已安装：
+   - Git
+   - Node.js (v18+)
+   - npm
+
+2. 安装OpenClaw：
+   npm install -g openclaw
+
+========================================
+二、恢复步骤
+========================================
+
+步骤1：克隆仓库
+----------------
+mkdir -p ~/.openclaw
+cd ~/.openclaw
+git clone https://github.com/neverlanding/openclaw-workspace.git workspace
+cd workspace
+
+步骤2：运行恢复脚本
+--------------------
+chmod +x restore-openclaw.sh
+./restore-openclaw.sh
+
+脚本会自动完成：
+✓ 恢复openclaw.json配置文件
+✓ 恢复记忆系统文件(memory/)
+✓ 恢复工具脚本(*.sh)
+✓ 恢复所有Markdown文档
+
+步骤3：配置API Keys
+-------------------
+由于安全原因，API keys未包含在仓库中，需要重新配置：
+
+openclaw configure
+
+按提示配置：
+- 选择模型提供商 (Qwen/Kimi/Claude等)
+- 输入API Key
+- 配置其他选项
+
+步骤4：验证恢复
+----------------
+openclaw status
+
+检查：
+✓ Gateway是否运行
+✓ 模型是否配置正确
+✓ 记忆系统是否加载
+
+========================================
+三、手动恢复（备用方案）
+========================================
+
+如果自动脚本失败，手动执行：
+
+# 1. 复制配置文件
+cp openclaw.json.backup ~/.openclaw/openclaw.json
+
+# 2. 复制工作区文件
+cp -r memory ~/.openclaw/workspace/
+cp *.md ~/.openclaw/workspace/
+cp *.sh ~/.openclaw/workspace/
+
+# 3. 配置
+openclaw configure
+
+========================================
+四、恢复后检查清单
+========================================
+
+□ 记忆系统
+  - cat ~/.openclaw/workspace/MEMORY.md
+  - ls ~/.openclaw/workspace/memory/
+
+□ 配置文件
+  - cat ~/.openclaw/openclaw.json | head -20
+
+□ 工具脚本
+  - ls ~/.openclaw/workspace/*.sh
+
+□ 运行测试
+  - openclaw status
+  - echo "你好" | openclaw run
+
+========================================
+五、注意事项
+========================================
+
+1. API Keys
+   - 需要重新配置所有API keys
+   - 原配置中的keys已脱敏
+
+2. SSH密钥
+   - 需要重新生成SSH密钥
+   - 添加到GitHub: https://github.com/settings/keys
+
+3. 浏览器扩展
+   - 需要重新安装OpenClaw Browser Relay
+   - Chrome扩展商店搜索安装
+
+4. 环境变量
+   - 检查~/.bashrc或~/.zshrc
+   - 确保PATH包含OpenClaw
+
+========================================
+六、仓库信息
+========================================
+
+GitHub仓库: https://github.com/neverlanding/openclaw-workspace
+分支: master
+最近更新: 2026-02-26
+
+包含内容:
+- 718个Git追踪文件
+- 完整记忆系统 (feedback/signals/verified/lessons/)
+- 所有配置文件 (AGENTS.md, MEMORY.md, SOUL.md等)
+- 工具脚本 (memory-health.sh, restore-openclaw.sh等)
+
+========================================
+七、故障排除
+========================================
+
+问题1: "openclaw: command not found"
+解决: npm install -g openclaw
+
+问题2: "Permission denied" (SSH)
+解决: 重新生成SSH密钥并添加到GitHub
+
+问题3: "API key invalid"
+解决: openclaw configure 重新配置
+
+问题4: 记忆系统未加载
+解决: 检查 ~/.openclaw/workspace/memory/ 目录是否存在
+
+========================================
+如有问题，随时联系！
+
+祝使用愉快！
+OpenClaw Assistant
+2026-02-26
+========================================
