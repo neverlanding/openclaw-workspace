@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "pptx-creator": {
+      "version": "1.0.0",
+      "installedAt": 1770621830184
+    },
+    "gamma": {
+      "version": "1.0.0",
+      "installedAt": 1770621840815
+    },
+    "prezentit": {
+      "version": "1.0.10",
+      "installedAt": 1770621848914
+    }
+  }
+}

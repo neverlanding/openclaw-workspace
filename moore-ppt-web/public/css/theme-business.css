@@ -1,0 +1,95 @@
+:root {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --bg-card: #ffffff;
+    --accent-gold: #b45309;
+    --accent-cyan: #0369a1;
+    --accent-purple: #1e3a8a;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan));
+}
+
+#currentPage { color: var(--accent-gold); }
+
+h1 {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide { color: var(--text-primary); }
+
+.timeline-item { 
+    border-left-color: var(--accent-cyan);
+    background: var(--bg-card);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.year { color: var(--accent-cyan); }
+
+.stat-number {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card, .law-card, .track-card {
+    background: var(--bg-card);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.note {
+    background: rgba(3, 105, 161, 0.1);
+    border-color: rgba(3, 105, 161, 0.3);
+    color: var(--accent-cyan);
+}
+
+.tech-item {
+    background: var(--bg-card);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tech-item.highlight {
+    border-color: var(--accent-cyan);
+    background: linear-gradient(135deg, rgba(3, 105, 161, 0.1), rgba(180, 83, 9, 0.1));
+}
+
+.law-card.highlight {
+    border-color: var(--accent-cyan);
+    background: linear-gradient(135deg, rgba(3, 105, 161, 0.05), rgba(180, 83, 9, 0.05));
+}
+
+.cost-new, .arrow { color: var(--accent-gold); }
+
+.track-benefit {
+    background: linear-gradient(135deg, rgba(3, 105, 161, 0.1), rgba(30, 58, 138, 0.1));
+    color: var(--accent-cyan);
+}
+
+.final-quote { color: var(--accent-gold); }
+
+.level-num {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+}
+
+.tag {
+    background: rgba(3, 105, 161, 0.1);
+    color: var(--accent-cyan);
+}
+
+.ref-num { background: var(--accent-cyan); color: white; }
+
+.page-indicator {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

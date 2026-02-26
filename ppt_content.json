@@ -1,0 +1,55 @@
+{
+  "title": "今日 OpenClaw 探索之旅",
+  "subtitle": "AI助手功能探索与实践",
+  "author": "第六类接触",
+  "template": "corporate",
+  "slides": [
+    {
+      "title": "今日 OpenClaw 探索之旅",
+      "layout": "title",
+      "subtitle": "AI助手功能探索与实践\n2026年2月9日",
+      "notes": "与第六类接触的对话记录"
+    },
+    {
+      "title": "连接飞书，开启智能助手",
+      "layout": "title_and_content",
+      "bullets": [
+        "成功配置并验证飞书通道",
+        "实现飞书DM与AI助手的双向通信",
+        "建立稳定的消息收发机制",
+        "飞书成为与AI助手交互的主要入口"
+      ]
+    },
+    {
+      "title": "探索技能生态",
+      "layout": "title_and_content",
+      "bullets": [
+        "技能发现：分析Awesome OpenClaw Skills仓库",
+        "数据统计：发现2,999个社区构建的技能",
+        "分类整理：涵盖31个分类（编程、AI、办公等）",
+        "热门技能：cellcog、cursor-agent、kimi-integration"
+      ]
+    },
+    {
+      "title": "安装PPT制作技能",
+      "layout": "title_and_content",
+      "bullets": [
+        "安装 pptx-creator：专业PPT生成",
+        "安装 gamma：Gamma.app AI演示文稿",
+        "安装 prezentit：精美AI幻灯片",
+        "现在可以直接通过对话生成专业PPT！"
+      ]
+    },
+    {
+      "title": "今日成果总结",
+      "layout": "title_and_content",
+      "bullets": [
+        "🚀 飞书通道：建立稳定通信",
+        "🛠️ 技能扩展：安装3个PPT技能",
+        "🎨 AI绘图：掌握免费生图方案（Pollinations.ai）",
+        "📚 知识积累：了解2999+社区技能",
+        "✨ 明日可期：继续探索AI助手无限可能"
+      ]
+    }
+  ]
+}

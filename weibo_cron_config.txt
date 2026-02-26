@@ -1,0 +1,15 @@
+# 微博热搜自动获取任务
+# 每10分钟获取一次微博热搜数据
+
+# 环境变量设置
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SHELL=/bin/bash
+
+# 每10分钟执行一次（在整点及每小时的10、20、30、40、50分执行）
+*/10 * * * * cd /home/gary/.openclaw/workspace && /usr/bin/python3 simple_weibo_scraper.py >> /home/gary/.openclaw/workspace/weibo_scraping.log 2>&1
+
+# 或者如果您想要每30分钟执行一次（更保守的频率）
+# */30 * * * * cd /home/gary/.openclaw/workspace && /usr/bin/python3 simple_weibo_scraper.py >> /home/gary/.openclaw/workspace/weibo_scraping.log 2>&1
+
+# 如果您想要每天特定时间执行（例如每天上午8点到晚上10点每小时执行一次）
+# 0 8-22 * * * cd /home/gary/.openclaw/workspace && /usr/bin/python3 simple_weibo_scraper.py >> /home/gary/.openclaw/workspace/weibo_scraping.log 2>&1

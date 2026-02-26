@@ -1,0 +1,12 @@
+{
+  "name": "moore-ppt-web",
+  "version": "1.0.0",
+  "description": "摩尔定律演示 PPT 网页版",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
