@@ -1,9 +1,15 @@
 {
-    "date": "2026-02-26",
-    "memory_md_lines": 66,
-    "daily_logs_count": 1,
-    "archive_count": 0,
-    "lessons_count": 0,
-    "projects_count": 0,
-    "last_check": "2026-02-26 12:15:05"
+  "date": "2026-02-26",
+  "timestamp": "2026-02-26T23:00:02+08:00",
+  "subagents": {
+    "count": 0,
+    "note": "查看sessions目录获取详细信息"
+  },
+  "files": {
+    "memory_md_lines": 136,
+    "daily_logs_count": 22
+  },
+  "git": {
+    "commits_today": 4
+  }
 }

@@ -12,6 +12,14 @@
     "prezentit": {
       "version": "1.0.10",
       "installedAt": 1770621848914
+    },
+    "astock-research": {
+      "version": "1.2.0",
+      "installedAt": 1772152202497
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1772152276532
     }
   }
 }
