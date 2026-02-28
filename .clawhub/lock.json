@@ -20,6 +20,18 @@
     "stock-analysis": {
       "version": "6.2.0",
       "installedAt": 1772152276532
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1772190664068
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772190673591
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772245573921
     }
   }
 }

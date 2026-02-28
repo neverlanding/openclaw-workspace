@@ -16,3 +16,21 @@
 }
 
 ✓ 统计已保存到: /home/gary/.openclaw/workspace/memory/stats/daily-2026-02-26.json
+=== Token统计 - 2026-02-27 ===
+{
+  "date": "2026-02-27",
+  "timestamp": "2026-02-27T23:00:01+08:00",
+  "subagents": {
+    "count": 0,
+    "note": "查看sessions目录获取详细信息"
+  },
+  "files": {
+    "memory_md_lines": 136,
+    "daily_logs_count": 0
+  },
+  "git": {
+    "commits_today": 1
+  }
+}
+
+✓ 统计已保存到: /home/gary/.openclaw/workspace/memory/stats/daily-2026-02-27.json

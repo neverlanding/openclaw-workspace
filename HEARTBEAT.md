@@ -1,5 +1,57 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 心跳任务清单
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+> 心跳触发时检查的任务列表
+> 更新: 2026-02-28
 
-# Add tasks below when you want the agent to check something periodically.
+---
+
+## ⏰ 定期任务检查
+
+### 1. 邮件检查 (每2-4小时)
+- [ ] 检查未读邮件
+- [ ] 标记重要邮件
+
+### 2. 日历检查 (每4-6小时)
+- [ ] 检查24小时内即将到来的事件
+- [ ] 提醒2小时内的事件
+
+### 3. 提醒任务检查 (每次心跳)
+- [ ] 使用 `crontab -l` 查看即将执行的提醒
+- [ ] 检查是否有需要通知用户的即将到来的提醒
+
+---
+
+## 🧠 记忆维护任务
+
+### 每日 (深夜执行)
+- [ ] 确保当日日志文件存在
+- [ ] 检查 memory/appointments.md 中的待办事项
+- [ ] 更新 MEMORY.md（如有重要事项）
+
+### 每周 (周一执行)
+- [ ] 回顾上周日志，提取关键信息
+- [ ] 更新 lessons/ 目录
+- [ ] 清理过期临时文件
+
+---
+
+## 📝 实施说明
+
+1. **选择性执行**: 每次心跳选择2-3个相关任务，不要全部执行
+2. **时间感知**: 23:00-08:00 除非紧急，保持安静
+3. **记录结果**: 在 memory/YYYY-MM-DD.md 中记录检查发现的行动项
+
+---
+
+## 💡 快速检查命令
+
+```bash
+# 查看即将执行的提醒
+crontab -l | grep -E "^[0-9]"
+
+# 检查今日日志
+ls -la memory/$(date +%Y-%m-%d).md
+
+# 查看约定跟踪表
+cat memory/appointments.md
+```
