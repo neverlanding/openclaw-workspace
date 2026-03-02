@@ -7027,3 +7027,571 @@ Error: Rate limit exceeded
 Error: Rate limit exceeded
 ✅ atxp 安装成功
 ⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ✅ tavily-search
+  ❌ atxp
+  ❌ atxp
+  ✅ find-skills
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 15:52:20 CST
+📋 未安装技能将在下次定时任务重试
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 15:52:20 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:00:02 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:00:02 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ✅ tavily-search
+  ❌ atxp
+  ❌ atxp
+  ✅ find-skills
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:07:12 CST
+📋 未安装技能将在下次定时任务重试
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:07:12 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:30:02 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:30:02 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Skill not found
+✖ Skill not found
+Error: Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+⏳ 等待 2 分钟...
+
+
+🔧 尝试安装: find-skills
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+✅ find-skills 已安装，跳过
+
+
+🔧 尝试安装: agent-browser
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ❌ atxp
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:37:18 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:45:02 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 16:45:02 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+✅ tavily-search 已安装，跳过
+
+
+🔧 尝试安装: atxp
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ❌ atxp
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:52:15 CST
+📋 未安装技能将在下次定时任务重试
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ❌ atxp
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:53:50 CST
+📋 未安装技能将在下次定时任务重试
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ❌ atxp
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 16:58:00 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:00:01 CST
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:00:02 CST
+
+🔧 尝试安装: self-improving-agent
+========================================
+
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+✅ self-improving-agent 已安装，跳过
+
+
+🔧 尝试安装: tavily-search
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+⏳ 等待 2 分钟...
+
+
+🔧 尝试安装: find-skills
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ✅ tavily-search
+  ❌ atxp
+  ❌ atxp
+  ✅ find-skills
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 17:07:14 CST
+📋 未安装技能将在下次定时任务重试
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 17:07:15 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:15:01 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:15:01 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ self-improving-agent 已安装，跳过
+
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+
+📝 安装报告:
+已安装技能:
+
+📝 安装报告:
+已安装技能:
+  ✅ self-improving-agent
+  ✅ self-improving-agent
+  ✅ tavily-search
+  ✅ tavily-search
+  ❌ atxp
+  ❌ atxp
+  ✅ find-skills
+  ✅ find-skills
+  ❌ agent-browser
+  ❌ agent-browser
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 17:22:15 CST
+📋 未安装技能将在下次定时任务重试
+  ❌ byterover
+
+✅ 本次批次完成 - 2026年 03月 02日 星期一 17:22:16 CST
+📋 未安装技能将在下次定时任务重试
+========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:35:18 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 17:35:18 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+
+✅ self-improving-agent 已安装，跳过
+🔧 尝试安装: tavily-search
+
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+✅ tavily-search 已安装，跳过
+🔧 尝试安装: atxp
+
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+✖ Skill not found
+Error: Skill not found
+⏳ 等待 2 分钟...
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
