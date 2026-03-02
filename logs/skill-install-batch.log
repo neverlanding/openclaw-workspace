@@ -7612,4 +7612,63 @@ Error: Rate limit exceeded
 Error: Rate limit exceeded
 ✅ byterover 安装成功
 ⏳ 等待 2 分钟...
-                                                                                                     
+                                                                                                     ========================================
+========================================
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 18:00:01 CST
+📦 批量技能安装任务 - 2026年 03月 02日 星期一 18:00:01 CST
+========================================
+========================================
+
+
+🔧 尝试安装: self-improving-agent
+🔧 尝试安装: self-improving-agent
+✅ self-improving-agent 已安装，跳过
+✅ self-improving-agent 已安装，跳过
+
+
+🔧 尝试安装: tavily-search
+🔧 尝试安装: tavily-search
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+✅ tavily-search 已安装，跳过
+
+🔧 尝试安装: atxp
+- Resolving atxp
+- Resolving atxp
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+✖ Skill not found
+Error: Skill not found
+✅ atxp 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+- Resolving agent-browser
+
+⚠️  Warning: "agent-browser" is flagged as suspicious by VirusTotal Code Insight.
+   This skill may contain risky patterns (crypto keys, external APIs, eval, etc.)
+   Review the skill code before use.
+
+Error: Use --force to install suspicious skills in non-interactive mode
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
