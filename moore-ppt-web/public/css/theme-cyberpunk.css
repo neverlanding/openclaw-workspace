@@ -1,0 +1,105 @@
+:root {
+    --bg-primary: #1a0b2e;
+    --bg-secondary: #240f3d;
+    --bg-card: #2d1252;
+    --accent-gold: #ff0080;
+    --accent-cyan: #00ffff;
+    --accent-purple: #bf00ff;
+    --text-primary: #f0f0f0;
+    --text-secondary: #b0b0b0;
+    --text-muted: #808080;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-cyan));
+}
+
+#currentPage { color: var(--accent-gold); }
+
+h1 {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, h3 { color: var(--accent-cyan); }
+
+.timeline-item { 
+    border-left-color: var(--accent-gold);
+    background: var(--bg-card);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+}
+
+.year { color: var(--accent-gold); text-shadow: 0 0 10px rgba(255, 0, 128, 0.5); }
+
+.stat-number {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+.stat-card, .law-card, .track-card, .tech-item {
+    background: var(--bg-card);
+    box-shadow: 0 0 15px rgba(191, 0, 255, 0.2);
+    border: 1px solid rgba(191, 0, 255, 0.3);
+}
+
+.note {
+    background: rgba(255, 0, 128, 0.1);
+    border-color: rgba(255, 0, 128, 0.5);
+    color: var(--accent-gold);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+}
+
+.tech-item.highlight {
+    border-color: var(--accent-gold);
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.15), rgba(0, 255, 255, 0.15));
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+}
+
+.law-card.highlight {
+    border-color: var(--accent-gold);
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.1), rgba(0, 255, 255, 0.1));
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.25);
+}
+
+.cost-new, .arrow { color: var(--accent-gold); }
+
+.track-benefit {
+    background: linear-gradient(135deg, rgba(255, 0, 128, 0.15), rgba(0, 255, 255, 0.15));
+    color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.final-quote { 
+    color: var(--accent-gold); 
+    text-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+.level-num {
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-cyan));
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
+}
+
+.tag {
+    background: rgba(0, 255, 255, 0.15);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.ref-num { 
+    background: var(--accent-cyan); 
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.page-indicator {
+    background: rgba(45, 18, 82, 0.9);
+    box-shadow: 0 0 10px rgba(191, 0, 255, 0.3);
+}

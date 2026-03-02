@@ -1,0 +1,48 @@
+# Ubuntu 自动更新禁用操作日志
+# 时间: 2026-02-27 10:30 CST
+# 任务: 关闭 Ubuntu 自动更新功能
+
+## 当前状态检查
+
+### 1. unattended-upgrades 服务状态
+服务正在运行 (active)，已启用 (enabled)。
+
+### 2. 配置文件当前内容
+
+/etc/apt/apt.conf.d/20auto-upgrades:
+- APT::Periodic::Update-Package-Lists "0"
+- APT::Periodic::Download-Upgradeable-Packages "0"
+- APT::Periodic::AutocleanInterval "0"
+- APT::Periodic::Unattended-Upgrade "1" ← 需要改为 0
+
+/etc/apt/apt.conf.d/10periodic:
+- APT::Periodic::Update-Package-Lists "0"
+- APT::Periodic::Download-Upgradeable-Packages "0"
+- APT::Periodic::AutocleanInterval "0"
+- APT::Periodic::Unattended-Upgrade "1" ← 需要改为 0
+
+## 已完成的操作
+
+1. ✅ 停止并禁用了 unattended-upgrades 服务
+2. ✅ 禁用了 apt-daily.timer 定时任务
+3. ✅ 禁用了 apt-daily-upgrade.timer 定时任务
+
+## 待完成的操作
+
+需要 sudo 密码来修改以下配置文件：
+- /etc/apt/apt.conf.d/20auto-upgrades
+- /etc/apt/apt.conf.d/10periodic
+
+需要将 APT::Periodic::Unattended-Upgrade 从 "1" 改为 "0"
+
+## 手动更新方法
+
+自动更新关闭后，建议定期手动执行以下命令来保持系统安全：
+
+```bash
+sudo apt update          # 更新软件包列表
+sudo apt upgrade         # 升级已安装的软件包
+sudo apt autoremove      # 清理不再需要的软件包
+```
+
+建议每周或每月运行一次。

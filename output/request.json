@@ -1,0 +1,10 @@
+{
+  "contents": [{
+    "parts": [{
+      "text": "Create a whiteboard presentation slide about Moore's Law. Style: Real whiteboard photo background with texture. Handwritten marker text using black, blue, and red colors only. Title: '摩尔定律 Moore's Law' in large black handwriting. Content: '每18-24个月，晶体管数量翻倍' in black. Formula: '性能 ↑ 成本 ↓' in red. Include hand-drawn microchip sketch and exponential growth curve. Professional classroom whiteboard look. 1920x1080 format."
+    }]
+  }],
+  "generationConfig": {
+    "responseModalities": ["TEXT", "IMAGE"]
+  }
+}

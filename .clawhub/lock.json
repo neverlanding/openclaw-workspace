@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "skills": {
+    "pptx-creator": {
+      "version": "1.0.0",
+      "installedAt": 1770621830184
+    },
+    "gamma": {
+      "version": "1.0.0",
+      "installedAt": 1770621840815
+    },
+    "prezentit": {
+      "version": "1.0.10",
+      "installedAt": 1770621848914
+    },
+    "astock-research": {
+      "version": "1.2.0",
+      "installedAt": 1772152202497
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1772152276532
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1772190664068
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772190673591
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772245573921
+    }
+  }
+}

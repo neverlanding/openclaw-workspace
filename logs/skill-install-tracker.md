@@ -118,3 +118,16 @@ tail -f ~/.openclaw/workspace-boss/logs/cron-skill-install.log
 ---
 
 *更新时间: 2026-03-01 14:17*
+
+---
+
+## 🔄 任务恢复 - 2026-03-02 14:31
+
+**状态**: ⏳ 已恢复执行
+**说明**:
+- 组长指令恢复定时任务
+- 继续安装剩余技能: tavily-search, atxp, find-skills, agent-browser, byterover
+- 定时任务: `*/15 * * * *` 每15分钟执行
+- 下次执行: 最近的15分钟整点
+
+*更新时间: 2026-03-02 14:31*
