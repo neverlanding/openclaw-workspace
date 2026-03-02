@@ -7578,3 +7578,38 @@ Error: Skill not found
 ⏳ 等待 2 分钟...
 ✅ atxp 安装成功
 ⏳ 等待 2 分钟...
+
+🔧 尝试安装: find-skills
+
+🔧 尝试安装: find-skills
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+✅ find-skills 已安装，跳过
+
+🔧 尝试安装: agent-browser
+- Resolving agent-browser
+- Resolving agent-browser
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ agent-browser 安装成功
+⏳ 等待 2 分钟...
+
+🔧 尝试安装: byterover
+
+🔧 尝试安装: byterover
+- Resolving byterover
+- Resolving byterover
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+✖ Rate limit exceeded
+Error: Rate limit exceeded
+✅ byterover 安装成功
+⏳ 等待 2 分钟...
+                                                                                                     
