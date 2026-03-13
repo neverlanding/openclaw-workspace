@@ -468,5 +468,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - `/tmp/image.png` → 只显示路径文本
 - `~/.openclaw/media/image.png` → 只显示路径文本
 
-### 📋 详细规则
-见 `memory/signals/feishu-image-rules.md`
+### 📋 完整指南
+**详细文档**: `memory/feishu-image-send-guide.md`
+
+**历史记录**: `memory/signals/feishu-image-rules.md`

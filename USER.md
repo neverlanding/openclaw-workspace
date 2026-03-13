@@ -2,8 +2,8 @@
 
 *Learn about the person you're helping. Update this as you go.*
 
-- **Name:** 大哥
-- **What to call them:** 大哥
+- **Name:** 组长
+- **What to call them:** 组长
 - **Pronouns:** *(optional)*
 - **Timezone:** GMT+8
 - **Notes:** 首次交流于2026年2月5日，是爪子哥的创建者和主要用户
