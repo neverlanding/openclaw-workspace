@@ -1,0 +1,30 @@
+# GitGuardian 配置文件
+# 忽略 Google API Key 检测
+# 方案2：忽略所有 Google API Key
+
+version: 2
+
+# 忽略的匹配规则
+ignored_matches:
+  - match: AIzaSy[A-Za-z0-9_-]{33}
+    name: Google API Key
+    comment: "忽略所有 Google API Key 检测"
+
+# 忽略的目录/文件
+ignored_paths:
+  - '.env'
+  - '.env.*'
+  - '**/.env'
+  - '**/secrets/**'
+  - 'secrets/**'
+  - 'credentials/**'
+  - '**/*config*.md'
+  - '**/feishu-bot-config*.md'
+  - 'archives/**'
+
+# 忽略的扩展名
+ignored_extensions:
+  - '.key'
+  - '.pem'
+  - '.p12'
+  - '.pfx'

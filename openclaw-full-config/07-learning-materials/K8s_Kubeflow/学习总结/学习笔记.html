@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>学习笔记</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="/usr/share/pandoc/data/pandoc.css" />
+</head>
+<body>
+<h1 id="k8s与kubeflow基础分享及常见问题---学习笔记">📹
+K8s与Kubeflow基础分享及常见问题 - 学习笔记</h1>
+<p><strong>来源</strong>: 内部分享会（王志帅）<br />
+<strong>时长</strong>: 83分钟<br />
+<strong>整理时间</strong>: 2026-03-11<br />
+<strong>整理者</strong>: 代码搭子</p>
+<hr />
+<h2 id="一视频信息">一、视频信息</h2>
+<ul>
+<li><strong>分享主题</strong>: K8s与Kubeflow基础分享及常见问题</li>
+<li><strong>主讲人</strong>: 王志帅</li>
+<li><strong>内容涵盖</strong>:
+<ul>
+<li>K8s历史发展与架构</li>
+<li>核心组件与资源对象</li>
+<li>CRD与Operator机制</li>
+<li>常见问题排查</li>
+<li>常用工具介绍</li>
+<li>Kubeflow简介</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="二核心要点">二、核心要点</h2>
+<h3 id="k8s基础概念">2.1 K8s基础概念</h3>
+<p><strong>历史发展</strong>: - 起源于谷歌，2014年开源 -
+由CNCF（云原生计算基金会）主导维护 - 已成为云原生生态的核心基础设施</p>
+<p><strong>架构组成</strong>: - <strong>控制面板（Master节点）</strong>:
+负责集群入口、请求处理、验证接收 - <strong>Node节点</strong>:
+运行实际工作负载（POD在此运行）</p>
+<p><strong>核心资源对象</strong>: - <strong>POD</strong>:
+K8s最基本的部署单元 - <strong>Service</strong>: 提供网络访问抽象 -
+<strong>Deployment</strong>: 管理POD的部署和更新</p>
+<p><strong>核心组件</strong>: - <strong>API Server</strong>:
+集群入口，处理所有请求 - <strong>ETCD</strong>:
+分布式键值存储，保存集群状态 - <strong>调度器（Scheduler）</strong>:
+根据资源情况选择节点部署POD</p>
+<h3 id="crd与operator">2.2 CRD与Operator</h3>
+<p><strong>CRD（自定义资源定义）</strong>: -
+K8s的扩展机制，允许用户通过预定义规范扩展自己的实现 -
+通过YAML声明创建、更新、删除自定义对象 -
+实现对特定应用的抽象，增强K8s原生能力</p>
+<p><strong>Operator</strong>: - 由定义CRD的人自行开发 -
+负责维护自定义资源的状态和逻辑 - 实现自我修复、自动扩缩容等高级功能</p>
+<p><strong>最佳实践</strong>: - 明确资源定义，确保意图清晰 -
+命名采用反向域名格式（避免冲突） - 状态和期望分离，便于管理</p>
+<h3 id="常见问题排查">2.3 常见问题排查</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">问题现象</th>
+<th style="text-align: left;">可能原因</th>
+<th style="text-align: left;">排查方法</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pending状态</strong></td>
+<td
+style="text-align: left;">资源不足、调度限制、节点亲和性规则不符</td>
+<td
+style="text-align: left;"><code>kubectl describe pod &lt;name&gt;</code>
+查看事件</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CrashLoopBackOff</strong></td>
+<td
+style="text-align: left;">应用配置错误、启动脚本问题、健康检查配置错误</td>
+<td style="text-align: left;">查看日志
+<code>kubectl logs &lt;pod&gt;</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>镜像拉取失败</strong></td>
+<td
+style="text-align: left;">镜像名称错误、仓库认证失败、网络不可达</td>
+<td style="text-align: left;">检查镜像名、配置代理</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>容器运行错误</strong></td>
+<td
+style="text-align: left;">挂载卷不存在、权限不足、启动命令执行异常</td>
+<td style="text-align: left;">查看POD详情和事件</td>
+</tr>
+</tbody>
+</table>
+<p><strong>排查工具命令</strong>:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 查看POD状态</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get pods</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 查看POD详情（含事件）</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> describe pod <span class="op">&lt;</span>pod-name<span class="op">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 查看日志</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> logs <span class="op">&lt;</span>pod-name<span class="op">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 进入容器</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> exec <span class="at">-it</span> <span class="op">&lt;</span>pod-name<span class="op">&gt;</span> -- /bin/bash</span></code></pre></div>
+<h3 id="常用工具">2.4 常用工具</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">特点</th>
+<th style="text-align: left;">推荐场景</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>kubectl</strong></td>
+<td style="text-align: left;">官方CLI，功能全面</td>
+<td style="text-align: left;">基础操作，脚本自动化</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Lens</strong></td>
+<td style="text-align: left;">图形化界面，支持多集群管理</td>
+<td style="text-align: left;">日常开发，可视化操作</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>k9s</strong></td>
+<td style="text-align: left;">终端UI，快捷键操作</td>
+<td style="text-align: left;">喜欢命令行的用户</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lens特点</strong>: - 社区版免费 - 支持多集群管理 -
+直观查看节点、POD、日志 - 鼠标操作，学习成本低</p>
+<p><strong>k9s特点</strong>: - 纯终端工具 - 快捷键操作高效 -
+每个集群需单独配置kubeconfig</p>
+<h3 id="kubeflow简介">2.5 Kubeflow简介</h3>
+<p><strong>定位</strong>: - 开源的机器学习平台 -
+简化机器学习工作流的部署与管理 -
+实现机器学习全流程的可复现、可扩展、自动化</p>
+<p><strong>核心组件</strong>: - <strong>Kubeflow Pipelines</strong>:
+工作流编排 - <strong>Training Operator</strong>:
+分布式训练（支持PyTorch、TensorFlow、MPI等） - <strong>Katib</strong>:
+超参数调优 - <strong>KServe</strong>: 模型推理服务</p>
+<p><strong>架构位置</strong>: - 位于K8s之上 -
+位于各种训练框架之下（PyTorch、TensorFlow、MPI等） - 承上启下的作用</p>
+<p><strong>分布式训练</strong>: - 通过CRD扩展K8s功能 - Training
+Operator作为底层控制器 - 监听自定义资源状态，驱动训练任务完成 -
+负责容错管理、日志收集、资源清理</p>
+<hr />
+<h2 id="三详细内容">三、详细内容</h2>
+<h3 id="k8s架构详解">3.1 K8s架构详解</h3>
+<p><strong>控制面板组件</strong>: 1. <strong>API Server</strong>:
+所有操作的入口，负责认证、授权、请求处理 2. <strong>ETCD</strong>:
+存储集群所有状态数据（配置、资源状态等） 3. <strong>Scheduler</strong>:
+根据资源需求和策略选择合适节点 4. <strong>Controller Manager</strong>:
+维护集群状态，确保实际状态与期望一致</p>
+<p><strong>Node节点组件</strong>: 1. <strong>Kubelet</strong>:
+节点代理，管理POD生命周期 2. <strong>Container Runtime</strong>:
+容器运行时（containerd、CRI-O等） 3. <strong>Kube-proxy</strong>:
+网络代理，实现Service的网络转发</p>
+<h3 id="crd定义示例">3.2 CRD定义示例</h3>
+<p><strong>Kubeflow PyTorchJob CRD结构</strong>:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">apiVersion</span><span class="kw">:</span><span class="at"> kubeflow.org/v1</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kind</span><span class="kw">:</span><span class="at"> PyTorchJob</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">metadata</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pytorch-job</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pytorchReplicaSpecs</span><span class="kw">:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">Master</span><span class="kw">:</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">replicas</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">containers</span><span class="kw">:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pytorch</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">image</span><span class="kw">:</span><span class="at"> pytorch/pytorch:latest</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">Worker</span><span class="kw">:</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">replicas</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">containers</span><span class="kw">:</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pytorch</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">image</span><span class="kw">:</span><span class="at"> pytorch/pytorch:latest</span></span></code></pre></div>
+<p><strong>关键字段</strong>: - <strong>Master</strong>:
+主节点，负责协调 - <strong>Worker</strong>: 工作节点，执行训练 -
+<strong>replicas</strong>: 副本数 - <strong>template</strong>:
+POD模板定义</p>
+<h3 id="问题排查流程">3.3 问题排查流程</h3>
+<p><strong>标准排查步骤</strong>: 1. <strong>确定问题POD</strong>:
+<code>kubectl get pods</code> 查看状态 2. <strong>查看详细信息</strong>:
+<code>kubectl describe pod &lt;name&gt;</code> 查看Events 3.
+<strong>查看日志</strong>: <code>kubectl logs &lt;pod-name&gt;</code> 4.
+<strong>进入容器</strong>:
+<code>kubectl exec -it &lt;pod-name&gt; -- /bin/bash</code> 5.
+<strong>根据错误信息解决</strong>: - 资源不足 → 调整资源配置或清理资源 -
+镜像问题 → 检查镜像名、认证、网络 - 配置错误 → 修正YAML配置</p>
+<hr />
+<h2 id="四实践建议">四、实践建议</h2>
+<h3 id="日常使用建议">4.1 日常使用建议</h3>
+<ol type="1">
+<li><strong>优先使用Lens</strong>: 图形化界面适合日常开发和问题排查</li>
+<li><strong>掌握kubectl</strong>: 脚本自动化和高级操作必备</li>
+<li><strong>善用describe</strong>: 遇到问题先describe看Events</li>
+<li><strong>规范命名</strong>: 使用有意义的名称，便于管理</li>
+</ol>
+<h3 id="crd开发建议">4.2 CRD开发建议</h3>
+<ol type="1">
+<li><strong>明确资源意图</strong>: 定义清晰，避免过度复杂</li>
+<li><strong>版本管理</strong>: 使用版本号管理CRD演进</li>
+<li><strong>状态设计</strong>:
+区分期望状态（Spec）和实际状态（Status）</li>
+<li><strong>Operator逻辑</strong>: 确保幂等性，处理各种边界情况</li>
+</ol>
+<h3 id="分布式训练建议">4.3 分布式训练建议</h3>
+<ol type="1">
+<li><strong>使用Kubeflow</strong>: 避免重复造轮子</li>
+<li><strong>合理配置资源</strong>: 根据训练需求配置CPU/GPU/内存</li>
+<li><strong>监控和日志</strong>: 配置监控和日志收集，便于问题排查</li>
+<li><strong>清理策略</strong>: 设置合适的清理策略，避免资源浪费</li>
+</ol>
+<hr />
+<h2 id="五关键命令速查">五、关键命令速查</h2>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 基础操作</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get pods                    <span class="co"># 查看POD列表</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get nodes                   <span class="co"># 查看节点</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get svc                     <span class="co"># 查看服务</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> describe pod <span class="op">&lt;</span>name<span class="op">&gt;</span>         # 查看POD详情</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> logs <span class="op">&lt;</span>pod-name<span class="op">&gt;</span>             # 查看日志</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> logs <span class="at">-f</span> <span class="op">&lt;</span>pod-name<span class="op">&gt;</span>          # 实时跟踪日志</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> exec <span class="at">-it</span> <span class="op">&lt;</span>pod<span class="op">&gt;</span> -- /bin/bash <span class="co"># 进入容器</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># CRD操作</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get crd                     <span class="co"># 查看所有CRD</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get <span class="op">&lt;</span>crd-name<span class="op">&gt;</span>              # 查看自定义资源</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> describe <span class="op">&lt;</span>crd-name<span class="op">&gt;</span> <span class="op">&lt;</span>name<span class="op">&gt;</span>  # 查看自定义资源详情</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 应用部署</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> apply <span class="at">-f</span> <span class="op">&lt;</span>yaml-file<span class="op">&gt;</span>        # 应用配置</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> delete <span class="at">-f</span> <span class="op">&lt;</span>yaml-file<span class="op">&gt;</span>       # 删除配置</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ex">kubectl</span> get events                  <span class="co"># 查看事件</span></span></code></pre></div>
+<hr />
+<h2 id="六相关资源">六、相关资源</h2>
+<ul>
+<li><a href="https://kubernetes.io/zh/docs/">K8s官方文档</a></li>
+<li><a href="https://www.kubeflow.org/docs/">Kubeflow官方文档</a></li>
+<li><a href="https://www.cncf.io/">CNCF官网</a></li>
+</ul>
+<hr />
+<h2 id="七后续行动">七、后续行动</h2>
+<ul class="task-list">
+<li><label><input
+type="checkbox" />本地安装kubectl并配置集群访问</label></li>
+<li><label><input type="checkbox" />尝试使用Lens管理集群</label></li>
+<li><label><input
+type="checkbox" />阅读Kubeflow官方文档深入了解</label></li>
+<li><label><input
+type="checkbox" />实践部署一个简单的分布式训练任务</label></li>
+</ul>
+<hr />
+<p><em>学习笔记整理完成</em></p>
+</body>
+</html>

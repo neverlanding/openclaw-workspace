@@ -1,0 +1,80 @@
+# 日志和缓存
+*.log
+*.cache
+node_modules/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 数据库和临时文件
+*.sqlite
+*.db
+*.sqlite3
+tmp/
+temp/
+*.tmp
+
+# 浏览器数据
+browser/
+chrome-data/
+
+# 敏感信息（核心脱敏规则）
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+*secret*
+*password*
+*token*
+
+# API Key和凭证（会被脱敏后提交，这里排除原始文件）
+*config.local.json
+*secrets.json
+credentials.json
+
+# 大文件和归档
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+*.7z
+*.gz
+
+# 媒体和大文件
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# 备份文件（避免循环）
+backups/
+backup/
+*.backup
+*.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 下载和缓存
+downloads/
+cache/
+.cached/
+07-learning-materials/K8s_Kubeflow/原始资料/audio.wav

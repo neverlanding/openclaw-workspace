@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.12",
+    "lastTouchedAt": "2026-03-14T10:12:16.588Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-09T01:23:23.301Z",
+    "lastRunVersion": "2026.3.2",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "browser": {
+    "enabled": true
+  },
+  "auth": {
+    "profiles": {
+      "qwen-portal:default": {
+        "provider": "qwen-portal",
+        "mode": "oauth"
+      },
+      "kimi-coding:default": {
+        "provider": "kimi-coding",
+        "mode": "api_key"
+      },
+      "moonshot:default": {
+        "provider": "moonshot",
+        "mode": "api_key"
+      },
+      "volcengine:default": {
+        "provider": "volcengine",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "qwen-portal": {
+        "baseUrl": "https://portal.qwen.ai/v1",
+        "apiKey": "qwen-oauth",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "coder-model",
+            "name": "Qwen Coder",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "vision-model",
+            "name": "Qwen Vision",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "kimi-coding": {
+        "baseUrl": "https://api.kimi.com/coding/",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "k2p5",
+            "name": "Kimi for Coding",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768
+          }
+        ]
+      },
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "kimi-k2.5",
+            "name": "Kimi K2.5",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kimi-coding/k2p5",
+        "fallbacks": [
+          "moonshot/kimi-k2.5",
+          "volcengine-plan/ark-code-latest",
+          "qwen-portal/coder-model",
+          "qwen-portal/vision-model"
+        ]
+      },
+      "models": {
+        "qwen-portal/coder-model": {
+          "alias": "qwen"
+        },
+        "qwen-portal/vision-model": {},
+        "kimi-coding/k2p5": {
+          "alias": "Kimi K2.5"
+        },
+        "moonshot/kimi-k2.5": {
+          "alias": "Kimi"
+        },
+        "volcengine-plan/ark-code-latest": {}
+      },
+      "workspace": "/home/gary/.openclaw/workspace",
+      "memorySearch": {
+        "enabled": true,
+        "sources": [
+          "memory",
+          "sessions"
+        ],
+        "query": {
+          "hybrid": {
+            "enabled": true,
+            "vectorWeight": 0.7,
+            "textWeight": 0.3
+          }
+        }
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 40000,
+          "prompt": "Distill this session to memory/YYYY-MM-DD.md. Focus on decisions, state changes, lessons, blockers. If nothing: NO_FLUSH",
+          "systemPrompt": "Extract only what is worth remembering. No fluff."
+        }
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "boss",
+        "default": true,
+        "workspace": "/home/gary/.openclaw/workspace-boss",
+        "agentDir": "/home/gary/.openclaw/agents/boss/agent"
+      },
+      {
+        "id": "planner",
+        "workspace": "/home/gary/.openclaw/workspace-planner",
+        "agentDir": "/home/gary/.openclaw/agents/planner/agent"
+      },
+      {
+        "id": "office",
+        "workspace": "/home/gary/.openclaw/workspace-office",
+        "agentDir": "/home/gary/.openclaw/agents/office/agent"
+      },
+      {
+        "id": "writer",
+        "workspace": "/home/gary/.openclaw/workspace-writer",
+        "agentDir": "/home/gary/.openclaw/agents/writer/agent"
+      },
+      {
+        "id": "news",
+        "workspace": "/home/gary/.openclaw/workspace-news",
+        "agentDir": "/home/gary/.openclaw/agents/news/agent"
+      },
+      {
+        "id": "reader",
+        "workspace": "/home/gary/.openclaw/workspace-reader",
+        "agentDir": "/home/gary/.openclaw/agents/reader/agent"
+      },
+      {
+        "id": "finance",
+        "workspace": "/home/gary/.openclaw/workspace-finance",
+        "agentDir": "/home/gary/.openclaw/agents/finance/agent"
+      },
+      {
+        "id": "coder",
+        "workspace": "/home/gary/.openclaw/workspace-coder",
+        "agentDir": "/home/gary/.openclaw/agents/coder/agent"
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "apiKey": ""
+      },
+      "fetch": {
+        "enabled": true
+      }
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "boss",
+      "match": {
+        "channel": "feishu",
+        "accountId": "main"
+      }
+    },
+    {
+      "agentId": "planner",
+      "match": {
+        "channel": "feishu",
+        "accountId": "1"
+      }
+    },
+    {
+      "agentId": "office",
+      "match": {
+        "channel": "feishu",
+        "accountId": "2"
+      }
+    },
+    {
+      "agentId": "writer",
+      "match": {
+        "channel": "feishu",
+        "accountId": "3"
+      }
+    },
+    {
+      "agentId": "news",
+      "match": {
+        "channel": "feishu",
+        "accountId": "4"
+      }
+    },
+    {
+      "agentId": "reader",
+      "match": {
+        "channel": "feishu",
+        "accountId": "5"
+      }
+    },
+    {
+      "agentId": "finance",
+      "match": {
+        "channel": "feishu",
+        "accountId": "6"
+      }
+    },
+    {
+      "agentId": "coder",
+      "match": {
+        "channel": "feishu",
+        "accountId": "7"
+      }
+    }
+  ],
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "feishu": {
+      "connectionMode": "websocket",
+      "enabled": true,
+      "accounts": [
+        {
+          "accountId": "main",
+          "appId": "cli_a90ed7d1f6389cd9",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "1",
+          "appId": "cli_a92bd5e6d339dcd2",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "2",
+          "appId": "cli_a92ce59b76fb9cc2",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "3",
+          "appId": "cli_a92cc78ef8b89ccd",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "4",
+          "appId": "cli_a92ce03f79b85cee",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "5",
+          "appId": "cli_a92ce21baa3a9cb5",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "6",
+          "appId": "cli_a92ce269bd789cc6",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        },
+        {
+          "accountId": "7",
+          "appId": "cli_a92ce2c190769cb3",
+          "appSecret": "[REDACTED]",
+          "allowFrom": [
+            "ou_d2f4d8ac1969ad7c0c427628f320e976"
+          ]
+        }
+      ],
+      "streaming": true,
+      "renderMode": "card"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://192.168.253.128:18789",
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "https://binocularly-unculled-thomas.ngrok-free.dev",
+        "https://100.116.96.60:18789",
+        "http://100.116.96.60:18789",
+        "http://100.116.96.60",
+        "https://100.116.96.60"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "[REDACTED]"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "entries": {
+      "nano-banana-pro": {
+        "enabled": true,
+        "apiKey": "[REDACTED]",
+        "env": {
+          "GEMINI_API_KEY": "AIzaSyD5ksR7W39RA_OCgdkCCgz5qeIjRZFZ6oI"
+        }
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "feishu",
+      "wecom-app",
+      "qwen-portal-auth"
+    ],
+    "entries": {
+      "qwen-portal-auth": {
+        "enabled": true
+      },
+      "wecom-app": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "feishu": {
+        "source": "npm",
+        "spec": "@m1heng-clawd/feishu",
+        "installPath": "/home/gary/.openclaw/extensions/feishu",
+        "version": "0.1.14",
+        "resolvedName": "@m1heng-clawd/feishu",
+        "resolvedVersion": "0.1.14",
+        "resolvedSpec": "@m1heng-clawd/feishu@0.1.14",
+        "integrity": "sha512-CJF3MNjxOUSEmu5OSXmvdzKyl4CUAOjbaq5WU0E/J6Mrl2TJZVtC95h/vGPYDpNEONAqP4xievOowvHqWuqbuw==",
+        "shasum": "a382656354e81bdc1c40e9624bc54e45919c22fe",
+        "resolvedAt": "2026-03-01T13:44:26.454Z",
+        "installedAt": "2026-03-01T13:47:20.518Z"
+      },
+      "wecom-app": {
+        "source": "npm",
+        "spec": "@openclaw-china/wecom-app",
+        "installPath": "/home/gary/.openclaw/extensions/wecom-app",
+        "version": "0.1.15",
+        "resolvedName": "@openclaw-china/wecom-app",
+        "resolvedVersion": "0.1.15",
+        "resolvedSpec": "@openclaw-china/wecom-app@0.1.15",
+        "integrity": "sha512-eR0pSrjIBYIEPmrBuIBVjOsvlicxapmklw0A3piMvPL49+xHrB4f2+fpUpggs8gHfUFjEmx0v+3IpFLAiLrQ0Q==",
+        "shasum": "990de4c9e18141c78ceede635e01e513173268f7",
+        "resolvedAt": "2026-02-28T10:35:32.832Z",
+        "installedAt": "2026-02-28T10:37:04.443Z"
+      }
+    }
+  }
+}
