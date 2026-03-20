@@ -1,0 +1,78 @@
+========================================
+[>2026-03-03 18:00:02] 开始检查待安装技能
+========================================
+[>18:00:02] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>18:00:02] ❌ byterover 安装失败 (限流或错误)
+
+[>18:00:02] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>18:00:02] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>18:00:02] 本次检查完成
+
+========================================
+[>2026-03-03 18:30:02] 开始检查待安装技能
+========================================
+[>18:30:02] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>18:30:02] ❌ byterover 安装失败 (限流或错误)
+
+[>18:30:02] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>18:30:02] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>18:30:02] 本次检查完成
+
+========================================
+[>2026-03-03 19:00:02] 开始检查待安装技能
+========================================
+[>19:00:02] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>19:00:02] ❌ byterover 安装失败 (限流或错误)
+
+[>19:00:02] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>19:00:02] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>19:00:02] 本次检查完成
+
+========================================
+[>2026-03-03 19:30:01] 开始检查待安装技能
+========================================
+[>19:30:01] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>19:30:01] ❌ byterover 安装失败 (限流或错误)
+
+[>19:30:01] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>19:30:01] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>19:30:01] 本次检查完成
+
+========================================
+[>2026-03-03 20:00:01] 开始检查待安装技能
+========================================
+[>20:00:01] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>20:00:01] ❌ byterover 安装失败 (限流或错误)
+
+[>20:00:01] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>20:00:01] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>20:00:01] 本次检查完成
+
+========================================
+[>2026-03-03 20:30:01] 开始检查待安装技能
+========================================
+[>20:30:01] 尝试安装: byterover
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 22: clawhub: 未找到命令
+[>20:30:01] ❌ byterover 安装失败 (限流或错误)
+
+[>20:30:01] 尝试安装: Star-Office-UI
+/home/gary/.openclaw/workspace-boss/scripts/auto-install-pending-skills.sh: 行 38: clawhub: 未找到命令
+[>20:30:01] ❌ Star-Office-UI 安装失败 (限流或错误)
+
+[>20:30:01] 本次检查完成
+

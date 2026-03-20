@@ -1,0 +1,11 @@
+{
+  "name": "volcengine-image-gen",
+  "version": "1.0.0",
+  "description": "火山引擎豆包图像生成API调用技能",
+  "author": "OpenClaw",
+  "entry": "scripts/generate.py",
+  "env": {
+    "VOLCENGINE_API_KEY": "14ece993-0349-4ee4-bddc-008d85e1445b",
+    "VOLCENGINE_ENDPOINT": "https://ark.cn-beijing.volces.com/api/v3/images/generations"
+  }
+}

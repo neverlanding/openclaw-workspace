@@ -1,0 +1,11 @@
+{
+  "name": "qwen-image-gen",
+  "version": "1.0.0",
+  "description": "通义千问(Qwen)图像生成API调用技能，支持文生图",
+  "author": "OpenClaw",
+  "entry": "scripts/generate.py",
+  "env": {
+    "DASHSCOPE_API_KEY": "sk-c108db0165044c02904c451e968eb809",
+    "DASHSCOPE_ENDPOINT": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text2image/image-synthesis"
+  }
+}

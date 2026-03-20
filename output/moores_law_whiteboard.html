@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.whiteboard {
+    width: 1920px;
+    height: 1080px;
+    background: #F5F5F0;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+.title {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.subtitle {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-style: italic;
+    color: #0066CC;
+}
+.content {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+.formula {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    font-size: 56px;
+    font-weight: bold;
+    color: #CC0000;
+}
+.signature {
+    position: absolute;
+    bottom: 60px;
+    right: 70px;
+    font-size: 28px;
+    font-style: italic;
+    color: #666666;
+}
+.chip {
+    position: absolute;
+    top: 280px;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #1a1a1a;
+}
+.graph {
+    position: absolute;
+    top: 550px;
+    right: 150px;
+    width: 300px;
+    height: 200px;
+}
+</style>
+</head>
+<body>
+<div class="whiteboard">
+    <div class="title">摩尔定律  Moore's Law</div>
+    <div class="subtitle">集成电路的指数增长</div>
+    <div class="content">
+        每18-24个月<br>
+        集成电路上的晶体管数量翻倍
+    </div>
+    <div class="formula">性能 ↑    成本 ↓</div>
+    <div class="signature">Gordon Moore 1965</div>
+    <div class="chip"></div>
+    <div class="graph">
+        <svg width="300" height="200">
+            <line x1="50" y1="150" x2="50" y2="50" stroke="#1a1a1a" stroke-width="3"/>
+            <line x1="50" y1="150" x2="280" y2="150" stroke="#1a1a1a" stroke-width="3"/>
+            <path d="M 50,150 Q 100,140 150,100 T 280,20" stroke="#CC0000" stroke-width="4" fill="none"/>
+            <text x="40" y="170" font-size="20" fill="#1a1a1a">1971</text>
+            <text x="260" y="170" font-size="20" fill="#1a1a1a">2024</text>
+        </svg>
+    </div>
+</div>
+</body>
+</html>

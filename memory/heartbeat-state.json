@@ -1,0 +1,17 @@
+{
+  "lastCheck": "2026-03-20T17:03:00+08:00",
+  "services": {
+    "18789": "up",
+    "18793": "up",
+    "9175": "down"
+  },
+  "cronErrors": [
+    {
+      "jobId": "fa533b79-181a-4872-b066-8130c5b16cbb",
+      "name": "finance-daily-market-review",
+      "consecutiveErrors": 2,
+      "lastError": "Feishu account not configured"
+    }
+  ],
+  "taskTrackerExists": false
+}

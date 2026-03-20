@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "profiles": {
+    "qwen-portal:default": {
+      "type": "oauth",
+      "provider": "qwen-portal",
+      "access": "qw1ykvVOdd2bRT5-SuJarZrRL47AQ2GmwE5B-D9bFSEocOTg8eW5RUF0wdl2s8C6OU6MiEQQhKw13C_XnD1rYA",
+      "refresh": "tpQFVloyryeSqfVP91Zll6Zdgw2Rxr4yMYRHo9idERVgpm-v9HaqgpiYdGclF9E1A2P09jmwg7vI_vlQSiWmCQ",
+      "expires": 1772172776769
+    },
+    "zai:default": {
+      "type": "api_key",
+      "provider": "zai",
+      "key": "5b34314262884a1fbe46e5f2dac57d7a.0vMZHpLgXqA2kiTg"
+    },
+    "kimi-coding:default": {
+      "type": "api_key",
+      "provider": "kimi-coding",
+      "key": "sk-kimi-cnHMpvhZtylHZh3hwyRWP7cqSok5rXeBnZXlwYJtudwRMl13NOHn9NqgsqkXYUa7"
+    },
+    "moonshot:default": {
+      "type": "api_key",
+      "provider": "moonshot",
+      "key": "sk-i2sEwIMTHbwMV4AlEERFMcPN2qrrEHLA8YyrYbeyhjHP2ouA"
+    },
+    "volcengine:default": {
+      "type": "api_key",
+      "provider": "volcengine",
+      "key": "0f4cb869-e784-4527-aeef-563ca3048a4f"
+    }
+  },
+  "lastGood": {
+    "qwen-portal": "qwen-portal:default",
+    "zai": "zai:default",
+    "kimi-coding": "kimi-coding:default"
+  },
+  "usageStats": {
+    "qwen-portal:default": {
+      "lastUsed": 1772151856760,
+      "errorCount": 6,
+      "lastFailureAt": 1772166740130,
+      "failureCounts": {
+        "rate_limit": 6
+      },
+      "cooldownUntil": 1772170340130
+    },
+    "zai:default": {
+      "lastUsed": 1770614970405,
+      "errorCount": 17,
+      "lastFailureAt": 1772178215832,
+      "failureCounts": {
+        "rate_limit": 17
+      },
+      "cooldownUntil": 1772181815832
+    },
+    "kimi-coding:default": {
+      "lastUsed": 1773626600913,
+      "errorCount": 0,
+      "lastFailureAt": 1770876252370
+    },
+    "volcengine:default": {
+      "errorCount": 0,
+      "lastUsed": 1773648341687
+    }
+  }
+}
